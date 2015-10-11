@@ -1,7 +1,6 @@
 language: c
 script: 
-  - git submodule update --init
-  - ./configure --prefix=$HOME/ircd --enable-ssl --disable-nls --enable-contrib
+  - ./configure --prefix=$HOME/atheme --enable-ssl --disable-nls
   - make
   - make install
 compiler:
