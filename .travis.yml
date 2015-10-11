@@ -1,5 +1,8 @@
 language: c
-script: ./configure --prefix=$HOME/ircd
+script: 
+  - ./configure --prefix=$HOME/ircd --enable-ssl --disable-nls --enable-contrib
+  - make
+  - make install
 compiler:
   - gcc
   - clang
