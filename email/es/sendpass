@@ -1,0 +1,18 @@
+From: &from&
+To: &to&
+Reply-To: &replyto&
+Subject: Recuperación de contraseña en &netname&
+Date: &date&
+
+&accountname&,
+
+Alguien ha pedido que la contraseña de tu cuenta sea recuperada y
+enviada a tu cuenta de correo electrónico. Si no solicitaste este
+cambio, por favor repórtelo inmediatamente, ya que puede ser un intento
+de comprometer tu cuenta.
+
+La contraseña de '&accountname&' ha sido cambiada a '&param&'.
+
+--
+Si no has solicitado este mensaje, por favor contacte a &replyto&
+con una copia completa del mismo.
