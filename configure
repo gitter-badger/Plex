@@ -578,10 +578,10 @@ MFLAGS=
 MAKEFLAGS=
 
 # Identity of this package.
-PACKAGE_NAME='shalture'
-PACKAGE_TARNAME='shalture'
-PACKAGE_VERSION='8.0-dev'
-PACKAGE_STRING='shalture 8.0-dev'
+PACKAGE_NAME='Plexian'
+PACKAGE_TARNAME='Plexian'
+PACKAGE_VERSION='24.5'
+PACKAGE_STRING='Plexian 24.5'
 PACKAGE_BUGREPORT='https://github.com/shalture/shalture/issues'
 PACKAGE_URL=''
 
@@ -4827,10 +4827,9 @@ if test -z "$PKG_CONFIG"; then
 	as_fn_error $? "pkg-config not found" "$LINENO" 5
 fi
 
-PACKAGE=shalture
+PACKAGE=plexian
 
-VERSION=8.0-dev
-
+VERSION=24.9
 
 
 cat >>confdefs.h <<_ACEOF
@@ -11481,7 +11480,7 @@ d=`eval echo ${MODDIR}`
 d=`eval echo $d`
 echo "
 Configuration:
-	Shaltúre version     : ${PACKAGE_VERSION}
+	Plexian version     : ${PACKAGE_VERSION}
 	Installation prefix  : ${prefix}
 	Module root directory: `eval echo $d`
 	Config directory     : ${sysconfdir}
@@ -11498,4 +11497,4 @@ Configuration:
 	CFLAGS               : ${CFLAGS}
 	Internationalization : ${USE_NLS}
 
-Type make to build Shaltúre, and make install to install it."
+Type make to build Plexian, and make install to install it."

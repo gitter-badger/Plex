@@ -1,5 +1,6 @@
 language: c
 script: 
+  - git submodule update --init
   - ./configure --prefix=$HOME/ircd --enable-ssl --disable-nls --enable-contrib
   - make
   - make install
@@ -7,3 +8,4 @@ compiler:
   - gcc
   - clang
   - g++
+  - make
