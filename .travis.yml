@@ -1,5 +1,6 @@
 language: c
 script: 
+  - autoconf
   - ./configure --prefix=$HOME/atheme --enable-ssl --disable-nls
   - make
   - make install
