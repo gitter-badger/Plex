@@ -1,8 +1,6 @@
 language: c
 script:
-  - ./configure --prefix=$HOME/atheme --enable-ssl --disable-nls
-  - make
-  - make install
+  - ./configure --prefix=$HOME/atheme && make && make install
 compiler:
   - gcc
   - clang
