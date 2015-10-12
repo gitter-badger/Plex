@@ -1,5 +1,6 @@
 language: c 
-script: ./configure --disable-nls --enable-ssl $CONFIGURE_WITH && make -j $(nproc) compiler:
+script: ./configure --disable-nls --enable-ssl $CONFIGURE_WITH && make -j $(nproc) 
+compiler:
   - gcc
   - clang matrix:
   fast_finish: true
