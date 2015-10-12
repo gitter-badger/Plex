@@ -1,5 +1,6 @@
 language: c
 script: 
+  - ./aclocal.m4
   - autoconf
   - ./configure --prefix=$HOME/atheme --enable-ssl --disable-nls
   - make
