@@ -55,31 +55,31 @@ static void os_cmd_identify(sourceinfo_t *si, int parc, char *parv[])
 
 	if (!is_soper(si->smu))
 	{
-		command_fail(si, fault_noprivs, _("You do not have a services operator account."));
+		command_fail(si, fault_noprivs, _("Invalid Operator Account!"));
 		return;
 	}
 
 	if (si->smu->soper->password == NULL)
 	{
-		command_fail(si, fault_nochange, _("Your services operator account does not have a password set."));
+		command_fail(si, fault_nochange, _("Your account has no password set, failed to login!"));
 		return;
 	}
 
 	if (si->su->flags & UF_SOPER_PASS)
 	{
-		command_fail(si, fault_nochange, _("You are already identified to %s."), si->service->nick);
+		command_fail(si, fault_nochange, _("You are already identified as %s."), si->service->nick);
 		return;
 	}
 
 	if (!verify_operserv_password(si->smu->soper, parv[0]))
 	{
-		command_fail(si, fault_authfail, _("Invalid password."));
+		command_fail(si, fault_authfail, _("Incorrect password!"));
 		logcommand(si, CMDLOG_ADMIN, "failed IDENTIFY (bad password)");
 		return;
-	}
+	
 
 	si->su->flags |= UF_SOPER_PASS;
-	command_success_nodata(si, _("You are now identified to %s."),
+	command_success_nodata(si, _("You are now identified as %s."),
 			si->service->nick);
 	logcommand(si, CMDLOG_ADMIN, "IDENTIFY");
 }

@@ -52,24 +52,24 @@ static void os_cmd_jupe(sourceinfo_t *si, int parc, char *parv[])
 
 	if (!irccasecmp(server, me.name))
 	{
-		command_fail(si, fault_noprivs, _("\2%s\2 is the services server; it cannot be jupitered!"), server);
+		command_fail(si, fault_noprivs, _("services. is the services server!"), server);
 		return;
 	}
 
 	if (!irccasecmp(server, me.actual))
 	{
-		command_fail(si, fault_noprivs, _("\2%s\2 is the current uplink; it cannot be jupitered!"), server);
+		command_fail(si, fault_noprivs, _("\2%s\2 is the server where services connect to!"), server);
 		return;
 	}
 
 	logcommand(si, CMDLOG_ADMIN, "JUPE: \2%s\2 (reason: \2%s\2)", server, reason);
-	wallops(_("%s jupitered server \2%s\2 (%s)."), get_oper_name(si),
+	wallops(_("%s jupe'd \2%s\2 (%s)."), get_oper_name(si),
 			server, reason);
 
 	snprintf(reasonbuf, BUFSIZE, "[%s] %s", get_oper_name(si), reason);
 	jupe(server, reasonbuf);
 
-	command_success_nodata(si, _("\2%s\2 has been jupitered."), server);
+	command_success_nodata(si, _("\2%s\2 has been juped"), server);
 }
 
 /* vim:cinoptions=>s,e0,n0,f0,{0,}0,^0,=s,ps,t0,c3,+s,(2s,us,)20,*30,gs,hs

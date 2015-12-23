@@ -32,7 +32,7 @@ void _moddeinit(module_unload_intent_t intent)
 static void os_cmd_restart(sourceinfo_t *si, int parc, char *parv[])
 {
 	logcommand(si, CMDLOG_ADMIN, "RESTART");
-	wallops("Restarting by request of \2%s\2.", get_oper_name(si));
+	wallops("Restarting... \2%s\2.", get_oper_name(si));
 
 	runflags |= RF_RESTART;
 }

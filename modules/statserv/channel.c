@@ -63,7 +63,7 @@ static void ss_cmd_channel(sourceinfo_t * si, int parc, char *parv[])
     if (c == NULL)
     {
         command_fail(si, fault_badparams,
-                _("Invalid command. Use \2/%s%s help\2 for a command listing."),
+                _("Invalid command. Use \2/%s%s help\2 for the list of valid commands"),
                 (ircd->uses_rcommand == false) ? "msg " : "", si->service->disp);
         return;
     }
