@@ -82,6 +82,7 @@ static void os_cmd_identify(sourceinfo_t *si, int parc, char *parv[])
 	command_success_nodata(si, _("You are now identified as %s."),
 			si->service->nick);
 	logcommand(si, CMDLOG_ADMIN, "IDENTIFY");
+        }
 }
 
 /* vim:cinoptions=>s,e0,n0,f0,{0,}0,^0,=s,ps,t0,c3,+s,(2s,us,)20,*30,gs,hs
