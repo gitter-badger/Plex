@@ -31,5 +31,5 @@ hints.
 
 __Be sure to read [the FAQ](doc/FAQ.md) as well.__
 
- * [GitHub: Plex/Plex](https://github.com/Plex/Plex)
- * [IRC: chat.freenode.net, #Plex](ircs://chat.freenode.net:6697/Plex) ([webchat](https://kiwiirc.com/client/chat.freenode.net:+6697/Plex))
+ * [GitHub: isainode/Plex](https://github.com/Plex/Plex)
+ * [IRC: irc.isainode.net, #Plex](ircs://irc.isainode.net:6697/Plex) ([webchat](https://kiwiirc.com/client/irc.isainode.net:+6697/Plex))
