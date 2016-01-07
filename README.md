@@ -1,4 +1,4 @@
-## Plex
+## Plex [![Build Status](https://travis-ci.org/Agent-Isai/Plex.svg?branch=master)](https://travis-ci.org/Agent-Isai/Plex)
 
 Plex is a set of services for IRC networks designed for large IRC networks 
 with high scalability requirements.  It is relatively mature software, with 
