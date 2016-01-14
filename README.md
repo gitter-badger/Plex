@@ -1,5 +1,7 @@
 ## Plex [![Build Status](https://travis-ci.org/isainode/Plex.svg?branch=master)](https://travis-ci.org/isainode/Plex)
 
+[![Join the chat at https://gitter.im/isainode/Plex](https://badges.gitter.im/isainode/Plex.svg)](https://gitter.im/isainode/Plex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Plex is a set of services for IRC networks designed for large IRC networks 
 with high scalability requirements.  It is relatively mature software, with 
 some code and design derived from another package called Shrike, and is a fork 
